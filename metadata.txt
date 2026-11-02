@@ -1,0 +1,16 @@
+[general]
+name=GeoServer Publisher
+qgisMinimumVersion=3.16
+description=Publish QGIS layers to GeoServer with stateless per-request auth (no REST session/login) and very detailed logging
+version=0.1.0
+author=Ayite
+email=ayiteb1@gmail.com
+about=Publishes vector layers to GeoServer using plain HTTP requests. No login/session and no global admin-only REST calls are made: every request carries its own (optional) Basic auth header and only touches workspace-scoped endpoints, so a workspace-level user (or even anonymous access, if the server allows it) works. Includes a WFS-T mode that needs no REST access at all. Every request/response is logged in detail.
+tracker=
+repository=
+tags=geoserver,publish,rest,wfs-t,ogc
+homepage=
+category=Web
+icon=icon.svg
+experimental=True
+deprecated=False
